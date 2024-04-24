@@ -14,3 +14,7 @@ Before proceeding with Docker Compose commands, ensure you're in the root direct
     ```bash
     docker-compose down -v
     ```
+- To open the the database on terminal:
+    ```bash
+    docker ps -a
+    ```
