@@ -17,4 +17,5 @@ Before proceeding with Docker Compose commands, ensure you're in the root direct
 - To open the the database on terminal:
     ```bash
     docker ps -a
+    docker exec -it hms-app_db_1 /bin/bash
     ```
