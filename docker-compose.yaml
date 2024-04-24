@@ -1,0 +1,15 @@
+version: '3'
+
+volumes:
+  db_data:
+
+services:
+  db:
+    image: mariadb:11.1.4
+    environment:
+      MYSQL_ROOT_PASSWORD: P@ssw0rd#123456
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./db-schema/HMS.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "3306:3306"
