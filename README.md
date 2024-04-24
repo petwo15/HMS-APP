@@ -18,4 +18,7 @@ Before proceeding with Docker Compose commands, ensure you're in the root direct
     ```bash
     docker ps -a
     docker exec -it hms-app_db_1 /bin/bash
+    mariadb -uroot -p
+    enter password:  P@ssw0rd#123456
+    use HMS;
     ```
